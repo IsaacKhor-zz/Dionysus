@@ -3,3 +3,5 @@
 //
 
 #import "DDHotKeyCenter.h"
+#import "DDHotKeyUtilities.h"
+#import "DDHotKeyTextField.h"

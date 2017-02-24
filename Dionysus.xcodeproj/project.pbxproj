@@ -103,17 +103,11 @@
 		5AD338131E5FC13400EE653C /* Dionysus */ = {
 			isa = PBXGroup;
 			children = (
+				5AD338471E5FC98200EE653C /* DDHotKey */,
 				5AD338141E5FC13400EE653C /* AppDelegate.swift */,
-				5AD3383E1E5FC5AD00EE653C /* DDHotKeyCenter.h */,
-				5AD3383F1E5FC5AD00EE653C /* DDHotKeyCenter.m */,
-				5AD338401E5FC5AD00EE653C /* DDHotKeyTextField.h */,
-				5AD338411E5FC5AD00EE653C /* DDHotKeyTextField.m */,
-				5AD338421E5FC5AD00EE653C /* DDHotKeyUtilities.h */,
-				5AD338431E5FC5AD00EE653C /* DDHotKeyUtilities.m */,
 				5AD338161E5FC13400EE653C /* Assets.xcassets */,
 				5AD338181E5FC13400EE653C /* MainMenu.xib */,
 				5AD3381B1E5FC13400EE653C /* Info.plist */,
-				5AD3383D1E5FC5AD00EE653C /* Dionysus-Bridging-Header.h */,
 			);
 			path = Dionysus;
 			sourceTree = "<group>";
@@ -134,6 +128,20 @@
 				5AD338311E5FC13500EE653C /* Info.plist */,
 			);
 			path = DionysusUITests;
+			sourceTree = "<group>";
+		};
+		5AD338471E5FC98200EE653C /* DDHotKey */ = {
+			isa = PBXGroup;
+			children = (
+				5AD3383E1E5FC5AD00EE653C /* DDHotKeyCenter.h */,
+				5AD3383F1E5FC5AD00EE653C /* DDHotKeyCenter.m */,
+				5AD338401E5FC5AD00EE653C /* DDHotKeyTextField.h */,
+				5AD338411E5FC5AD00EE653C /* DDHotKeyTextField.m */,
+				5AD338421E5FC5AD00EE653C /* DDHotKeyUtilities.h */,
+				5AD338431E5FC5AD00EE653C /* DDHotKeyUtilities.m */,
+				5AD3383D1E5FC5AD00EE653C /* Dionysus-Bridging-Header.h */,
+			);
+			name = DDHotKey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
