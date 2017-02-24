@@ -12,6 +12,9 @@
 		5AD3381A1E5FC13400EE653C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD338181E5FC13400EE653C /* MainMenu.xib */; };
 		5AD338251E5FC13500EE653C /* DionysusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD338241E5FC13500EE653C /* DionysusTests.swift */; };
 		5AD338301E5FC13500EE653C /* DionysusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD3382F1E5FC13500EE653C /* DionysusUITests.swift */; };
+		5AD338441E5FC5AD00EE653C /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD3383F1E5FC5AD00EE653C /* DDHotKeyCenter.m */; };
+		5AD338451E5FC5AD00EE653C /* DDHotKeyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD338411E5FC5AD00EE653C /* DDHotKeyTextField.m */; };
+		5AD338461E5FC5AD00EE653C /* DDHotKeyUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD338431E5FC5AD00EE653C /* DDHotKeyUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,13 @@
 		5AD3382B1E5FC13500EE653C /* DionysusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DionysusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD3382F1E5FC13500EE653C /* DionysusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DionysusUITests.swift; sourceTree = "<group>"; };
 		5AD338311E5FC13500EE653C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AD3383D1E5FC5AD00EE653C /* Dionysus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dionysus-Bridging-Header.h"; sourceTree = "<group>"; };
+		5AD3383E1E5FC5AD00EE653C /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHotKeyCenter.h; path = DDHotKey/DDHotKeyCenter.h; sourceTree = SOURCE_ROOT; };
+		5AD3383F1E5FC5AD00EE653C /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHotKeyCenter.m; path = DDHotKey/DDHotKeyCenter.m; sourceTree = SOURCE_ROOT; };
+		5AD338401E5FC5AD00EE653C /* DDHotKeyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHotKeyTextField.h; path = DDHotKey/DDHotKeyTextField.h; sourceTree = SOURCE_ROOT; };
+		5AD338411E5FC5AD00EE653C /* DDHotKeyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHotKeyTextField.m; path = DDHotKey/DDHotKeyTextField.m; sourceTree = SOURCE_ROOT; };
+		5AD338421E5FC5AD00EE653C /* DDHotKeyUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHotKeyUtilities.h; path = DDHotKey/DDHotKeyUtilities.h; sourceTree = SOURCE_ROOT; };
+		5AD338431E5FC5AD00EE653C /* DDHotKeyUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHotKeyUtilities.m; path = DDHotKey/DDHotKeyUtilities.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +104,16 @@
 			isa = PBXGroup;
 			children = (
 				5AD338141E5FC13400EE653C /* AppDelegate.swift */,
+				5AD3383E1E5FC5AD00EE653C /* DDHotKeyCenter.h */,
+				5AD3383F1E5FC5AD00EE653C /* DDHotKeyCenter.m */,
+				5AD338401E5FC5AD00EE653C /* DDHotKeyTextField.h */,
+				5AD338411E5FC5AD00EE653C /* DDHotKeyTextField.m */,
+				5AD338421E5FC5AD00EE653C /* DDHotKeyUtilities.h */,
+				5AD338431E5FC5AD00EE653C /* DDHotKeyUtilities.m */,
 				5AD338161E5FC13400EE653C /* Assets.xcassets */,
 				5AD338181E5FC13400EE653C /* MainMenu.xib */,
 				5AD3381B1E5FC13400EE653C /* Info.plist */,
+				5AD3383D1E5FC5AD00EE653C /* Dionysus-Bridging-Header.h */,
 			);
 			path = Dionysus;
 			sourceTree = "<group>";
@@ -187,6 +204,7 @@
 				TargetAttributes = {
 					5AD338101E5FC13400EE653C = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					5AD3381F1E5FC13500EE653C = {
@@ -252,6 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AD338451E5FC5AD00EE653C /* DDHotKeyTextField.m in Sources */,
+				5AD338441E5FC5AD00EE653C /* DDHotKeyCenter.m in Sources */,
+				5AD338461E5FC5AD00EE653C /* DDHotKeyUtilities.m in Sources */,
 				5AD338151E5FC13400EE653C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,11 +414,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Dionysus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.isaackhor.Dionysus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dionysus/Dionysus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -406,11 +430,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Dionysus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.isaackhor.Dionysus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dionysus/Dionysus-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
